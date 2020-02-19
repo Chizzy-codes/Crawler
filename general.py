@@ -45,9 +45,9 @@ def delete_file_content(path):
 # read a file and convert each line into a set item while getting rid of the new line component of each line
 
 
-def file_to_set(filename):
+def file_to_set(file_name):
     results = set()
-    with open(filename, 'rt') as f:
+    with open(file_name, 'rt') as f:
         for line in f:
             results.add(line.replace('\n', ''))
     return results
